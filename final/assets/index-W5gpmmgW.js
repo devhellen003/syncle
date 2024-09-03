@@ -1638,7 +1638,7 @@ function Ys(e, t) {
 }
 
 function Ha(e, t) {
-    return e ? Q(e) && Q(t) ? [...new Set([...e, ...t])] : De(Object.create(null), $a(e), $a(t ? ? {})) : t
+    return e ? Q(e) && Q(t) ? [...new Set([...e, ...t])] : De(Object.create(null), $a(e), $a(t ?? {})) : t
 }
 
 function lu(e, t) {
@@ -2532,7 +2532,7 @@ function Ws(e, t) {
 const Oi = "__vInternal",
     Xc = ({
         key: e
-    }) => e ? ? null,
+    }) => e ?? null,
     Jn = ({
         ref: e,
         ref_key: t,
@@ -3029,14 +3029,14 @@ function Uu(e, t, s, n, i) {
 
 function Gu(e, t, s, n, i, r, o) {
     if (t === "innerHTML" || t === "textContent") {
-        n && o(n, i, r), e[t] = s ? ? "";
+        n && o(n, i, r), e[t] = s ?? "";
         return
     }
     const l = e.tagName;
     if (t === "value" && l !== "PROGRESS" && !l.includes("-")) {
         e._value = s;
         const c = l === "OPTION" ? e.getAttribute("value") : e.value,
-            d = s ? ? "";
+            d = s ?? "";
         c !== d && (e.value = d), s == null && e.removeAttribute(t);
         return
     }
@@ -3154,7 +3154,7 @@ const lr = Symbol("_assign"),
         mounted(e, {
             value: t
         }) {
-            e.value = t ? ? ""
+            e.value = t ?? ""
         },
         beforeUpdate(e, {
             value: t,
@@ -3166,7 +3166,7 @@ const lr = Symbol("_assign"),
         }, r) {
             if (e[lr] = el(r), e.composing) return;
             const o = i || e.type === "number" ? Ir(e.value) : e.value,
-                l = t ? ? "";
+                l = t ?? "";
             o !== l && (document.activeElement === e && e.type !== "range" && (s || n && e.value.trim() === l) || (e.value = l))
         }
     },
@@ -3232,7 +3232,7 @@ function dr(e, t, s = "/") {
         o = "";
     const l = t.indexOf("#");
     let a = t.indexOf("?");
-    return l < a && l >= 0 && (a = -1), a > -1 && (n = t.slice(0, a), r = t.slice(a + 1, l > -1 ? l : t.length), i = e(r)), l > -1 && (n = n || t.slice(0, l), o = t.slice(l, t.length)), n = u1(n ? ? t, s), {
+    return l < a && l >= 0 && (a = -1), a > -1 && (n = t.slice(0, a), r = t.slice(a + 1, l > -1 ? l : t.length), i = e(r)), l > -1 && (n = n || t.slice(0, l), o = t.slice(l, t.length)), n = u1(n ?? t, s), {
         fullPath: n + (r && "?") + r + o,
         path: n,
         query: i,
@@ -4181,7 +4181,7 @@ function rh(e, t) {
 function ml(e) {
     return e ? e.aliasOf ? e.aliasOf.path : e.path : ""
 }
-const vl = (e, t, s) => e ? ? t ? ? s,
+const vl = (e, t, s) => e ?? t ?? s,
     oh = Oc({
         name: "RouterView",
         inheritAttrs: !1,
